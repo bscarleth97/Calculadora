@@ -1,8 +1,8 @@
 submitButton = document.getElementById("loan-form");
+resetButton = document.getElementById("loan-reset");
 document.getElementById("results").style.display = "none";
 document.getElementById("loader").style.display = "none";
 //console.log(submitButton);
-//submitButton.addEventListener("submit", calculateResults);
 
 submitButton.addEventListener("submit", function(e) {
   document.getElementById("loader").style.display = "block";
@@ -62,3 +62,15 @@ function manageError(errorMsg) {
 function clearError() {
   document.getElementById("customAlert").remove();
 }
+
+/*
+resetButton.addEventListener("click", function reset(e) {
+  document.getElementById("results").style.display = "none";
+  const loanAmmountUI = document.getElementById("amount");
+  const interestAmmountUI = document.getElementById("interest");
+  const yearsAmmountUI = document.getElementById("years");
+  loanAmmountUI.innerText = "";
+  interestAmmountUI.innerText = "";
+  yearsAmmountUI.innerText = "";
+});
+*/
